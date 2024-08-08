@@ -1,8 +1,8 @@
-body {
+body{
     font-family: Arial, sans-serif;
+    background-color: #6ef7e0;
     margin: 0;
     padding: 0;
-    background-color: #CBF1F7;
     scroll-behavior: smooth;
 }
 
@@ -174,7 +174,7 @@ nav ul li a:hover {
 }
 
 .service-card {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -183,11 +183,10 @@ nav ul li a:hover {
 }
 
 .service-card img {
-    width: 300px;
+    width: 100%;
     height: 300px;
     margin-bottom: 10px;
 }
-
 .service-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -525,49 +524,5 @@ button:hover {
 
     .quienes-somos {
         padding: 30px;
-    }
-}
-
-/* Estilos para pantallas grandes */
-@media (min-width: 1024px) {
-    header {
-        padding: 10px 20vh;
-    }
-
-    .logo img {
-        height: 100px;
-    }
-
-    .logo2 img {
-        height: 200px;
-    }
-
-    .seccion1 img {
-        height: 600px;
-    }
-
-    .service-card {
-        width: 300px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .product img {
-        height: 250px;
-    }
-
-    .contacto {
-        height: 100vh;
-        padding: 0 20px;
-    }
-
-    .contacto-contenido {
-        max-width: 600px;
-    }
-
-    .quienes-somos {
-        padding: 40px;
     }
 }
