@@ -453,7 +453,4 @@ button:hover {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr ;
 }
-.logo{
-    grid-column: center;
-}
 }
