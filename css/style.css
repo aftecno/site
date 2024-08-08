@@ -54,7 +54,7 @@ nav ul li a:hover {
 .image {
     flex: 1;
     text-align: center;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 .seccion1 img {
@@ -355,7 +355,7 @@ label {
 }
 
 textarea, input[type="email"] {
-    width: calc(100% - 22px); /* Ajustar para compensar el padding */
+    width: calc(100% - 22px); 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -381,11 +381,10 @@ button:hover {
 .mapa-conteiner {
     text-align: center;
     width: 100%;
-    height: 400px; 
-    margin-top: 5px;
-    padding-bottom: 300px;
-    border-radius: 8px;
-    overflow: hidden;
+    height: 100%;
+    border-radius: 10px;
+    overflow:hidden;
+    padding-bottom: 20px;
 }
 /* SECCION 6 QUIEN SOMOS */
 .quienes-somos {
@@ -423,7 +422,7 @@ button:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive styles */
+/* Responsivo */
 @media screen and (max-width: 1024px) {
     header {
         padding: 10px 5vh;
@@ -448,7 +447,12 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-.nav{
+    .header{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr ;
+    }
+    .main{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr ;
