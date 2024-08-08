@@ -387,6 +387,10 @@ button:hover {
     padding-bottom: 20px;
 }
 /* SECCION 6 QUIEN SOMOS */
+.preg1{
+    text-align: center;
+    padding-top: 30px;
+}
 .quienes-somos {
     display: flex;
     justify-content: center;
@@ -422,39 +426,148 @@ button:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsivo */
-@media screen and (max-width: 1024px) {
+/* Estilos para móviles */
+@media (max-width: 767px) {
     header {
-        padding: 10px 5vh;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 80px;
+    }
+
+    .logo2 img {
+        height: 150px;
     }
 
     .seccion1 {
         flex-direction: column;
+        margin-top: 30px;
     }
 
     .seccion1 img {
         height: auto;
-        max-height: 400px;
+    }
+
+    .text {
+        padding: 20px;
     }
 
     .services-container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 
     .service-card {
-        width: calc(50% - 20px);
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .product img {
+        height: 200px;
+    }
+
+    .contacto {
+        height: auto;
+        padding: 20px;
+    }
+
+    .contacto-contenido {
+        max-width: 100%;
+    }
+
+    .quienes-somos {
+        padding: 20px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .header{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr ;
+/* Estilos para (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 10px 15px;
     }
-    .main{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr ;
+
+    .logo img {
+        height: 90px;
+    }
+
+    .logo2 img {
+        height: 180px;
+    }
+
+    .seccion1 img {
+        height: 500px;
+    }
+
+    .service-card {
+        width: 48%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .product img {
+        height: 220px;
+    }
+
+    .contacto {
+        height: auto;
+        padding: 40px;
+    }
+
+    .contacto-contenido {
+        max-width: 100%;
+    }
+
+    .quienes-somos {
+        padding: 30px;
+    }
 }
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    header {
+        padding: 10px 20vh;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .logo2 img {
+        height: 200px;
+    }
+
+    .seccion1 img {
+        height: 600px;
+    }
+
+    .service-card {
+        width: 300px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .product img {
+        height: 250px;
+    }
+
+    .contacto {
+        height: 100vh;
+        padding: 0 20px;
+    }
+
+    .contacto-contenido {
+        max-width: 600px;
+    }
+
+    .quienes-somos {
+        padding: 40px;
+    }
 }
