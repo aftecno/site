@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #CBF1F7;
+    background-color: #6ef7e0;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -171,7 +171,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    padding: 20px;
 }
 
 .service-card {
@@ -217,7 +216,6 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
 }
 
 .product {
