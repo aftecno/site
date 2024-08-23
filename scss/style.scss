@@ -1,6 +1,7 @@
 
 @import "var";
 @import "header";
+@import "body";
 @import "secciones";
 @import "footer";
 
@@ -13,15 +14,6 @@
 
 @mixin box-shadow($shadow...) {
   box-shadow: $shadow;
-}
-
-// Estilos
-body {
-  font-family: Arial, sans-serif;
-  background-color: $background-color;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
 }
 
 .logo {
