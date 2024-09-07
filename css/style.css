@@ -381,81 +381,95 @@ footer .container .social-media ul li a img:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
   header {
+    flex-direction: column;
     padding: 10px;
   }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
   .logo img {
     height: 80px;
   }
+
   .logo2 img {
     height: 150px;
   }
+
   .seccion1 {
     flex-direction: column;
-    margin-top: 30px;
   }
-  .seccion1 img {
+
+  .seccion1 .image,
+  .seccion1 .image img {
     height: auto;
+    max-width: 100%;
   }
-  .text {
-    padding: 20px;
-  }
+
   .services-container {
     flex-direction: column;
     align-items: center;
   }
+
   .services-container .service-card {
     width: 100%;
+    max-width: 300px;
   }
+
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  .gallery .product img {
-    height: 200px;
+
+  footer .container {
+    flex-direction: column;
+    text-align: center;
   }
-  .contacto {
-    height: auto;
-    padding: 20px;
+
+  footer .container .social-media ul {
+    justify-content: center;
+    margin-top: 20px;
   }
+
   .contacto .contacto-contenido {
-    max-width: 100%;
+    width: 90%;
+    max-width: none;
   }
+
   .quienes-somos {
-    padding: 20px;
+    width: 90%;
+    max-width: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  header {
-    padding: 10px 15px;
-  }
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
   .logo img {
-    height: 90px;
+    height: 60px;
   }
+
   .logo2 img {
-    height: 180px;
+    height: 120px;
   }
-  .seccion1 img {
-    height: 500px;
+
+  .border1 {
+    font-size: 20px;
+    padding: 8px 16px;
   }
-  .service-card {
-    width: 48%;
+
+  .services-container .service-card img {
+    height: 200px;
   }
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
+
   .gallery .product img {
-    height: 220px;
-  }
-  .contacto {
-    height: auto;
-    padding: 40px;
-  }
-  .contacto .contacto-contenido {
-    max-width: 100%;
-  }
-  .quienes-somos {
-    padding: 30px;
+    height: 200px;
   }
 }
 
