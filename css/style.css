@@ -380,6 +380,33 @@ footer .container .social-media ul li a img:hover {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+/* Boostrap Preguntas*/
+.accordion-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.preg1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .accordion-container {
+    padding: 10px;
+  }
+
+  .accordion-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .accordion-body {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   header {
@@ -449,7 +476,7 @@ footer .container .social-media ul li a img:hover {
   }
 }
 
-/* Additional adjustments for very small screens */
+/* ---- */
 @media screen and (max-width: 480px) {
   .logo img {
     height: 60px;
